@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    padding: 3%;
+}
+
+h1 {
+    margin-bottom: 2%;
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    gap: 1%;
+}
+
+form > input, form > button {
+    min-height: 5vh;
+}
+
+form > input {
+    flex: 2;
+    padding: 1%;
+    outline: none;
+    border-style: none none solid none;
+    border-color: #191825;
+}
+
+form > input:focus {
+    background-color: #ddE6Ed;
+}
+
+form > button {
+    flex: 1;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #27374d;
+    color: #fff;
+}
