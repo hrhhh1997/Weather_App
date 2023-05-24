@@ -1,0 +1,15 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "A simple app that integrates openweather api to deliver weather data",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nana Kojo Nyan Adarkwa",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
