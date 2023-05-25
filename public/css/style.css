@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -17,7 +18,8 @@ form {
     display: flex;
     width: 50%;
     margin: auto;
-    gap: 1%;
+    gap: 2%;
+    margin-bottom: 5%;
 }
 
 form > input, form > button {
@@ -30,6 +32,7 @@ form > input {
     outline: none;
     border-style: none none solid none;
     border-color: #191825;
+    text-align: center;
 }
 
 form > input:focus {
@@ -43,4 +46,13 @@ form > button {
     border-radius: 5px;
     background-color: #27374d;
     color: #fff;
+}
+
+.weather-data p:not(:last-child){
+    margin-bottom: 2%;
+}
+
+h4 {
+    text-decoration: underline;
+    margin-bottom: 2%;
 }

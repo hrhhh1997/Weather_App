@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="/js-files/index.js" defer></script>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <h1>WEATHER REPORTER</h1>
+        <p class="date-area"></p>
+        <form action="/" method="post">
+            <input type="search" name="location" id="locationTxt" placeholder="City name E.g. 'Accra'">
+            <button type="submit">Search</button>
+        </form>
+        <div class="weather-data">
+            <h4>Weather Data</h4>
+            <p><%=dataLocation%></p>
+            <p><%=temperature%></p>
+            <p><%=description%></p>
+        </div>
+    </body>
+</html>
