@@ -30,7 +30,7 @@ app.post("/", (req, res)=> {
                 res.render("weatherinfo", {dataLocation: "Error: "+404, temperature: "Message: " +"City Not Found!", description: "Enter valid City name. Name entered: " + userInput});
             } else {
                 const responseData = await response.json();
-                const temp = responseData['main']['temp'];
+                const temp = responseData['main']['temp'] + '\u00B0 Celsius';
                 const description = responseData['weather'][0]['description'];
                 const dLocation = responseData['name'];
 
